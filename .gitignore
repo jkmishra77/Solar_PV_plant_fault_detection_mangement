@@ -1,0 +1,202 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.c
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Data files (excluding processed data needed for demo)
+data/raw/
+data/interim/
+*.csv
+*.csv.gz
+*.h5
+*.hdf5
+*.feather
+*.parquet
+
+# Exception: keep processed data for demo
+!data/processed/processed_data.csv
+
+# Model files (large binary files)
+models/*.joblib
+models/*.pkl
+models/*.pickle
+models/*.h5
+models/*.keras
+models/*.pt
+models/*.pth
+
+# MLflow
+mlruns/
+mlflow/
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Streamlit specific
+.streamlit/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# AWS
+.aws/
+*.pem
+*.key
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Documentation
+docs/_build/
+
+# MacOS
+*.DS_Store
+
+# Windows
+Thumbs.db
+
+# Excel files
+*.xlsx
+*.xls
+
+# PDF files
+*.pdf
+
+# Image files (except those used in README)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.7z
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Exception: keep config files
+!config/config.yaml
+!requirements.txt
+!README.md
+!app.py
+
+# Exception: keep source code
+!src/**/*.py
+
+# Exception: keep sample data for demo
+!data/processed/processed_data.csv
+
+# Except this image
+!models/combined_analysis.png
