@@ -50,24 +50,23 @@ if 'sample_df' not in st.session_state:
 # Sample Prediction UI
 st.header("📊 Sample Prediction")
 
-# Display analysis image with expandable view
-st.subheader("📈 Combined Fault Analysis")
+from PIL import Image
+
+st.subheader("🖼️ Fault Analysis Snapshot")
 
 try:
-    from PIL import Image
     image_path = "models/combined_analysis.png"
     image = Image.open(image_path)
 
-    # Show large preview
-    st.image(image, caption="Combined Fault Analysis", use_column_width=True)
+    # Show compact preview inside expander
+    with st.expander("🔍 Click to view Combined Fault Analysis"):
+        st.image(image, caption="Combined Fault Analysis", use_container_width=True)
 
-    # Expandable full view
-    with st.expander("🔍 Click to expand full analysis"):
-        st.image(image, caption="Expanded View", use_column_width=True)
+    # Optional: show a small icon preview outside
+    st.image(image, width=100)
 
 except Exception as e:
-    st.error(f"Error loading analysis image: {e}")
-
+    st.error(f"Error loading image: {e}")
 
 if not st.session_state.sample_df.empty:
     st.subheader("Samples from Dataset")
