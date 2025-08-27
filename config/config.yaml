@@ -1,0 +1,51 @@
+# config/config.yaml
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed" 
+  interim_path: "data/interim"
+  features: ["V", "I", "G", "P", "P_actual", "I_G_ratio", "V_G_ratio", "efficiency"]
+  target: "fault_type"
+  fault_mapping:
+    0: "normal"
+    1: "LL1" 
+    2: "LL2"
+    3: "Partial_shading"
+
+model:
+  features: ["V", "I", "G", "P", "P_actual", "I_G_ratio", "V_G_ratio", "efficiency"]
+  target: "fault_type"
+  test_size: 0.2
+  random_state: 42
+  use_smote: true
+  xgb_params:
+    n_estimators: 200
+    max_depth: 5
+    learning_rate: 0.1
+    objective: "multi:softmax"
+  isolation_forest_params:
+    n_estimators: 100
+    contamination: 0.05
+    random_state: 42
+
+paths:
+  models_dir: "models"
+  logs_dir: "logs"
+  notebooks_dir: "notebooks"
+  tests_dir: "tests"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/solar_fault_detection.log"
+
+file_names:
+  raw_data: ["LL1.csv", "LL2.csv", "normal.csv", "Partial_shading.csv"]
+  processed_data: "processed_data.csv"
+  merged_data: "merged_data.csv"
+  combined_results: "combined_analysis_results.csv"
+
+# Feature engineering parameters
+feature_engineering:
+  min_irradiance: 0.1  # Minimum G value to avoid division by zero
+  power_columns: ["P", "P_actual"]
+  ratio_columns: ["I_G_ratio", "V_G_ratio"]

@@ -1,0 +1,10 @@
+artifact_location: file:///F:/Projects/Solar_PV_plant_fault_detection_mangement/mlruns/848801593226625535/models/m-52591ff4728f40b982bbf9ca5fe4448c/artifacts
+creation_timestamp: 1756250460502
+experiment_id: '848801593226625535'
+last_updated_timestamp: 1756250464848
+model_id: m-52591ff4728f40b982bbf9ca5fe4448c
+model_type: null
+name: label_encoder
+source_run_id: 1e7aec26f76b444d9131782b59564941
+status: 2
+status_message: null

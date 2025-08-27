@@ -1,0 +1,10 @@
+artifact_location: file:///F:/Projects/Solar_PV_plant_fault_detection_mangement/mlruns/848801593226625535/models/m-8aab975664a2471aada26ba702744ac2/artifacts
+creation_timestamp: 1756243298855
+experiment_id: '848801593226625535'
+last_updated_timestamp: 1756243303032
+model_id: m-8aab975664a2471aada26ba702744ac2
+model_type: null
+name: scaler
+source_run_id: 5f22a61639fe4f5e8bafb84f6c3a535d
+status: 2
+status_message: null

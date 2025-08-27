@@ -1,0 +1,14 @@
+artifact_path: file:///F:/Projects/Solar_PV_plant_fault_detection_mangement/mlruns/848801593226625535/models/m-b5d16a7827794c81bfef51b0873d55bd/artifacts
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+mlflow_version: 3.3.1
+model_id: m-b5d16a7827794c81bfef51b0873d55bd
+model_size_bytes: 274
+model_uuid: m-b5d16a7827794c81bfef51b0873d55bd
+prompts: null
+run_id: 833687ed5f504f77b3e1db86b12345f5
+utc_time_created: '2025-08-26 23:19:26.505040'

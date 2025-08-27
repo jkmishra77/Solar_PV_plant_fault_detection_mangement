@@ -1,0 +1,10 @@
+artifact_location: file:///F:/Projects/Solar_PV_plant_fault_detection_mangement/mlruns/848801593226625535/models/m-19ed101af0bf4216ad265be631dc3912/artifacts
+creation_timestamp: 1756250356579
+experiment_id: '848801593226625535'
+last_updated_timestamp: 1756250362246
+model_id: m-19ed101af0bf4216ad265be631dc3912
+model_type: null
+name: model
+source_run_id: 833687ed5f504f77b3e1db86b12345f5
+status: 2
+status_message: null
